@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4x2 Grid</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-template-rows: repeat(2, 100px);
+            gap: 10px;
+        }
+
+        .grid-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            color: white;
+            font-family: Arial, sans-serif;
+            border-radius: 5px;
+        }
+
+        .grid-item:nth-child(1) {
+            background-color: #ff6666;
+        }
+
+        .grid-item:nth-child(2) {
+            background-color: #66b2ff;
+        }
+
+        .grid-item:nth-child(3) {
+            background-color: #66ff66;
+        }
+
+        .grid-item:nth-child(4) {
+            background-color: #ffff66;
+        }
+
+        .grid-item:nth-child(5) {
+            background-color: #ff66ff;
+        }
+
+        .grid-item:nth-child(6) {
+            background-color: #ff9966;
+        }
+
+        .grid-item:nth-child(7) {
+            background-color: #66ffcc;
+        }
+
+        .grid-item:nth-child(8) {
+            background-color: #ffb266;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+    </div>
+
+</body>
+</html>
